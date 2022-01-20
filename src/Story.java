@@ -8,7 +8,6 @@ import person.Person;
 import person.Scream;
 import place.Location;
 
-
 public class Story {
 
     public static void main(String[] args) throws EmptyException {
