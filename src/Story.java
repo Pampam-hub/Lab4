@@ -1,6 +1,6 @@
 //import java.util.Scanner;
 import static enums.AreaType.*;
-//import import
+//test of github
 import exceptions.*;
 import person.Donat;
 import person.Dunno;
