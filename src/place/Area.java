@@ -13,7 +13,6 @@ public class Area extends Nameable {
         this.type = type;
         Environment.setEnvironment(type);
         environment = Environment.getEnvironment();
-        
     }
 
     public AreaType getType() {
