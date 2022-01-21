@@ -1,17 +1,20 @@
 package place;
+
 import enums.AreaType;
 
 public class Location {
     private boolean lighting;
     private boolean visible;
-    private Area area;
+    private AreaType type;
     private String description;
+    private String name;
 
     public Location(boolean lighting, boolean visible, AreaType type, String description) {
         this.lighting = lighting;
         this.visible = visible;
-        this.area = new Area(type);
+        this.type = type;
         this.description = description;
+        name = type.getName();
     }
 
     public boolean isLighting() {
@@ -23,18 +26,16 @@ public class Location {
     }
 
     public AreaType getType() {
-        return area.getType();
+        return type;
     }
 
-//    public String getEnvironment() {
-//        return area.getEnvironment();
-//    }
     public String getEnvironment() {
         return description;
     }
 
-    public String getName() {
-        return area.getName();
+    public String getName(){
+        return name;
     }
-}
 
+
+}
