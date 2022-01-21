@@ -8,4 +8,5 @@ public class Donat extends Person {
     public void getLost() {
         System.out.printf("%s заблудился между ледяными колоннами.\n", getName());
     }
+    
 }
